@@ -23,3 +23,6 @@ clean:
 
 mysql:
 	$(DOCKER_COMPOSE) exec $(MYSQL_CONTAINER) mysql -u $(MYSQL_USER) -p$(MYSQL_PASSWORD)
+
+test:
+	$(DOCKER_COMPOSE) exec app php artisan test
