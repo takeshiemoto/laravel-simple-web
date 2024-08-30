@@ -1,7 +1,7 @@
 # Makefile
 
 # 環境変数
-DOCKER_COMPOSE = docker-compose
+DOCKER_COMPOSE = docker compose
 MYSQL_CONTAINER = mysql
 MYSQL_USER = user
 MYSQL_PASSWORD = secret
