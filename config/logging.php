@@ -9,28 +9,28 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Log Channel
+    | デフォルトのログチャンネル
     |--------------------------------------------------------------------------
     |
-    | This option defines the default log channel that is utilized to write
-    | messages to your logs. The value provided here should match one of
-    | the channels present in the list of "channels" configured below.
+    | このオプションは、ログメッセージを書き込むために使用される
+    | デフォルトのログチャンネルを定義します。ここに提供される値は、
+    | 下の「channels」リストに設定されたチャンネルのいずれかと一致する
+    | 必要があります。
     |
     */
-
     'default' => env('LOG_CHANNEL', 'stack'),
 
     /*
     |--------------------------------------------------------------------------
-    | Deprecations Log Channel
+    | 非推奨機能のログチャンネル
     |--------------------------------------------------------------------------
     |
-    | This option controls the log channel that should be used to log warnings
-    | regarding deprecated PHP and library features. This allows you to get
-    | your application ready for upcoming major versions of dependencies.
+    | このオプションは、非推奨のPHPおよびライブラリ機能に関する警告を
+    | 記録するために使用されるログチャンネルを制御します。これにより、
+    | 依存関係の次のメジャーバージョンに向けてアプリケーションを準備
+    | することができます。
     |
     */
-
     'deprecations' => [
         'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
         'trace' => env('LOG_DEPRECATIONS_TRACE', false),
@@ -38,18 +38,16 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Log Channels
+    | ログチャネル
     |--------------------------------------------------------------------------
     |
-    | Here you may configure the log channels for your application. Laravel
-    | utilizes the Monolog PHP logging library, which includes a variety
-    | of powerful log handlers and formatters that you're free to use.
+    | ここでは、アプリケーションのログチャネルを設定できます。LaravelはMonolog PHPロギングライブラリを利用しており
+    | さまざまな強力なログハンドラとフォーマッタが含まれていますので、自由に使用することができます。
     |
-    | Available drivers: "single", "daily", "slack", "syslog",
-    |                    "errorlog", "monolog", "custom", "stack"
+    | 利用可能なドライバー: "single", "daily", "slack", "syslog",
+    |                      "errorlog", "monolog", "custom", "stack"
     |
     */
-
     'channels' => [
 
         'stack' => [
