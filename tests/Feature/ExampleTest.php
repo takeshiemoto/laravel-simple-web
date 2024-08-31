@@ -11,12 +11,12 @@ class ExampleTest extends TestCase
     {
         parent::setUp();
 
-        dump("Setting up the test");
+        dump('Setting up the test');
     }
 
     protected function tearDown(): void
     {
-        dump("Tearing down the test");
+        dump('Tearing down the test');
 
         parent::tearDown();
     }
@@ -24,7 +24,7 @@ class ExampleTest extends TestCase
     public function test_sample_1(): void
     {
         $response = $this->get('/');
-        dump("sample1");
+        dump('sample1');
 
         $response->assertStatus(200);
     }
@@ -32,7 +32,7 @@ class ExampleTest extends TestCase
     public function test_sample_2(): void
     {
         $response = $this->get('/');
-        dump("sample2");
+        dump('sample2');
 
         $response->assertStatus(200);
     }
